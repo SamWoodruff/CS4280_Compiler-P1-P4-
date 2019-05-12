@@ -1,0 +1,5 @@
+&Prints 1
+void
+	cond[1=<2]
+		print 1;
+return

@@ -1,0 +1,5 @@
+&Echo input
+void
+	scan x1;
+	print x1;
+return

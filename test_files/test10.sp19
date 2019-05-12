@@ -1,0 +1,17 @@
+&Print input then input -1 down to 0,
+&But every ouput is echoed as many times as the value being printed
+var x1 : 1
+var x2 : 2 
+void
+	scan x1;
+	iter[x1 => 0]
+	void
+		x2 = x1;
+		iter[x2 >0]
+		void
+			print x1;
+			x2 = x2 - 1;
+		return;
+		x1 = x1 - 1;
+	return;
+return

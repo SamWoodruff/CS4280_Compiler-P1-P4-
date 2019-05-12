@@ -1,0 +1,19 @@
+#include<stdio.h>
+#ifndef SCANNER_H_
+#define SCANNER_H_
+FILE *fp;
+enum tokenID{ITER_TK, VOID_TK, VAR_TK, RETURN_TK, SCAN_TK, PRINT_TK, PROGRAM_TK, COND_TK, THEN_TK, LET_TK, END_TK, ID_TK, INT_TK, LESS_THAN_TK, 
+GREATER_THAN_TK, ASSIGN_TK, COLON_TK, PLUS_TK, MINUS_TK, ASTERIK_TK, SLASH_TK, PERCENT_TK, PERIOD_TK, LEFT_PARENTHESIS_TK, RIGHT_PARENTHESIS_TK, 
+COMMA_TK, LEFT_BRACE_TK, RIGHT_BRACE_TK, SEMI_COLON_TK, LEFT_BRACKET_TK, RIGHT_BRACKET_TK, EOF_TK, ERROR_TK};
+typedef struct{
+	enum tokenID ID;
+	char* name;
+	int lineNum;
+}token;
+	
+	token scan();
+	void filter();
+	int getRowIndex(char c);
+	
+
+#endif

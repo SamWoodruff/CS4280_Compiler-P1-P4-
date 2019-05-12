@@ -1,0 +1,4 @@
+&This program prints 1
+void
+	print x1;
+return
